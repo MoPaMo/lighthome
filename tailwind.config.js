@@ -10,7 +10,7 @@ module.exports = {
         "SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif",
     },
     colors: {
-      mirror: "#2f3236",
+      mirror: { 500: "#2f3236", 400: "#474c52" },
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,
