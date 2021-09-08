@@ -40,7 +40,7 @@
         <div
           class="block relative rounded-lg md:row-span-2 bg-gradient-to-br from-mirror-500 to-mirror-400 p-4 text-gray-50 font-semibold"
         >
-          <div class="opacity-100 duration-500" id="mirror-usual">
+          <div class="opacity-100 duration-500 top-0 relative" id="mirror-usual">
             <img src="/img/mirroricon.svg" alt="" class="w-1/3 mb-3 mt-10" />
             <h3 class="text-5xl text-gray-50 font-bold">MirrorMe</h3>
             <h5 class="text-3xl mt-4">
@@ -54,7 +54,7 @@
           >
             +
           </div>
-          <div id="mirror-context" class="duration-500 opacity-0">
+          <div id="mirror-context" class="duration-500 opacity-0 relative top-56 ">
             MirrorMe lets you mirror your server's messages to a web page -
             without storing any unecrypted data.
             <a
@@ -77,8 +77,13 @@
             let usual = document.getElementById("mirror-usual");
             usual.classList.toggle("opacity-0");
             usual.classList.toggle("opacity-100");
+            usual.classList.toggle("top-0");
+            usual.classList.toggle("inset-y-32");
+
             context.classList.toggle("opacity-100");
             context.classList.toggle("opacity-0");
+            context.classList.toggle("top-56");
+            context.classList.toggle("top-0");
           });
       </script>
     </main>
