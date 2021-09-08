@@ -70,11 +70,15 @@
         <div class="md:col-span-1 bg-gray-50 rounded-lg"></div>
       </section>
       <script type="text/javascript">
-        document
-          .getElementById("mirror-extend")
+      const toggles=["mirror"]
+        for(t in toggles){
+          t=toggles[t];
+          document
+          .getElementById(t+"-extend")
           .addEventListener("click", (e) => {
-            let context = document.getElementById("mirror-context");
-            let usual = document.getElementById("mirror-usual");
+
+            let context = document.getElementById(t+"-context");
+            let usual = document.getElementById(t+"-usual");
             usual.classList.toggle("opacity-0");
             usual.classList.toggle("opacity-100");
             usual.classList.toggle("top-0");
@@ -84,7 +88,7 @@
             context.classList.toggle("opacity-0");
             context.classList.toggle("top-56");
             context.classList.toggle("top-0");
-          });
+          });}
       </script>
     </main>
   </body>
