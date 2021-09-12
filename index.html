@@ -22,11 +22,12 @@
           MoPaMo
         </h1>
       </div>
-      <div
+      <button
+      id="header-scrolldown"
         class="absolute bottom-10 left-1/2 transform -translate-x-1/2 border-gray-300 custom-in font-bold font-smart duration-500 cursor-pointer shadow-none hover:shadow-xl"
       >
         SCROLL DOWN
-      </div>
+      </button>
     </header>
     <main
       id="cardparent"
@@ -116,6 +117,18 @@
               context.classList.toggle("top-0");
             });
         }
+
+        document.getElementById('header-scrolldown').addEventListener("click", ()=>{
+          let h=document.getElementById('header').offsetHeight;
+          let b=document.body.scrollTop;
+          let int = setInterval(()=>{
+            if(b*2<h+20)
+            window.scrollTo(0,b*2);
+            b++
+          },1)
+          console.log(h,b);
+
+        })
       </script>
     </main>
   </body>
