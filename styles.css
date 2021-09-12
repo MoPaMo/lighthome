@@ -1,14 +1,38 @@
-.custom-in{
+.custom-in {
   animation-name: header-avatar;
   animation-duration: 2s;
 }
 @keyframes header-avatar {
-from{opacity:0%;
-  margin-top:100px;
+  from {
+    opacity: 0%;
+    margin-top: 100px;
+  }
+  to {
+    margin-top: 0px;
 
+    opacity: 100%;
+  }
 }
-to{
-  margin-top:0px;
-
-  opacity: 100%}
+#header-scrolldown {
+  animation-name: header-button;
+  animation-duration: 10s;
+  animation-delay: 4s;
+  opacity: 0%;
+  animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;
+}
+@keyframes header-button {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
