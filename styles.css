@@ -1,6 +1,6 @@
 .custom-in{
   animation-name: header-avatar;
-  animation-duration: 2s; 
+  animation-duration: 2s;
 }
 @keyframes header-avatar {
 from{opacity:0%;
