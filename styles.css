@@ -15,24 +15,17 @@
 }
 #header-scrolldown {
   animation-name: header-button;
-  animation-duration: 10s;
+  animation-duration: 3s;
   animation-delay: 4s;
   opacity: 0%;
-  animation-iteration-count: infinite;
--moz-animation-iteration-count: infinite;
--webkit-animation-iteration-count: infinite;
--o-animation-iteration-count: infinite;
+animation-fill-mode: forwards;
 }
 @keyframes header-button {
-  0% {
+  from {
     opacity: 0%;
   }
-  50% {
+
+  to {
     opacity: 100%;
-  }90% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 0%;
   }
 }
