@@ -19,6 +19,8 @@
   animation-delay: 4s;
   opacity: 0%;
 animation-fill-mode: forwards;
+cursor: auto;
+
 }
 @keyframes header-button {
   from {
@@ -27,5 +29,7 @@ animation-fill-mode: forwards;
 
   to {
     opacity: 100%;
+    cursor: pointer;
   }
 }
+html,body{scroll-behavior: smooth;}
