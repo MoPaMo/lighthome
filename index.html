@@ -23,9 +23,9 @@
         </h1>
       </div>
       <a
-      id="header-scrolldown"
-      href="#cardparent"
-        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 border-gray-300 custom-in font-bold font-smart duration-500 shadow-none hover:shadow-xl "
+        id="header-scrolldown"
+        href="#cardparent"
+        class="absolute bottom-10 left-1/2 transform -translate-x-1/2 border-gray-300 custom-in font-bold font-smart duration-500 shadow-none hover:shadow-xl"
       >
         SCROLL DOWN
       </a>
@@ -100,10 +100,15 @@
       </section>
       <script src="/smoothscroll.js"></script>
       <script type="text/javascript">
-window.__forceSmoothScrollPolyfill__ = true;
-document.getElementById('header-scrolldown').addEventListener("click", ()=>{
-document.querySelector('#cardparent').scrollIntoView({ behavior: 'smooth' });
-return false;})
+        window.__forceSmoothScrollPolyfill__ = true;
+        document
+          .getElementById("header-scrolldown")
+          .addEventListener("click", () => {
+            document
+              .querySelector("#cardparent")
+              .scrollIntoView({ behavior: "smooth" });
+            return false;
+          });
         const toggles = ["mirror"];
         for (t in toggles) {
           t = toggles[t];
@@ -124,7 +129,7 @@ return false;})
             });
         }
 
-      /*  document.getElementById('header-scrolldown').addEventListener("click", ()=>{
+        /*  document.getElementById('header-scrolldown').addEventListener("click", ()=>{
           let h=document.getElementById('header').offsetHeight;
           let b=document.body.scrollTop;
           let int = setInterval(()=>{
