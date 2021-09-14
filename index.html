@@ -98,7 +98,12 @@
         <div class="md:col-span-1 bg-gray-50 rounded-lg"></div>
         <div class="md:col-span-1 bg-gray-50 rounded-lg"></div>
       </section>
+      <script src="/smoothscroll.js"></script>
       <script type="text/javascript">
+window.__forceSmoothScrollPolyfill__ = true;
+document.getElementById('header-scrolldown').addEventListener("click", ()=>{
+document.querySelector('#cardparent').scrollIntoView({ behavior: 'smooth' });
+return false;})
         const toggles = ["mirror"];
         for (t in toggles) {
           t = toggles[t];
