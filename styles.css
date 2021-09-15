@@ -1,6 +1,4 @@
-.extend-btn{
-  @apply rounded-full cursor-pointer absolute bottom-3 right-3 h-16 w-16 text-center align-middle bg-gradient-to-br
-}
+
 .custom-in {
   animation-name: header-avatar;
   animation-duration: 2s;

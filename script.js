@@ -16,6 +16,7 @@ for (t in toggles) {
   document
     .getElementById(t + "-extend")
     .addEventListener("click", (e) => {
+      console.log(e);
       context = document.getElementById(t + "-context");
       usual = document.getElementById(t + "-usual");
       usual.classList.toggle("opacity-0");
