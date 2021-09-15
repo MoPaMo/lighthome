@@ -123,17 +123,7 @@
             id="f-context"
             class="duration-500 opacity-0 relative top-56"
           >
-          ⚡ Powerful Analytics <br>
-
-🎛️ User-friendly modern browser interface <br>
-
-💾 > 20 MB <br>
-
-🌐 Works even on microhosting services! <br>
-
-🏗️ Build with sqlite3 and nodeJS <br>
-
-🏃 Developed with speed in mind <br>
+           In Build
           </div>
         </div>
         <div class="md:col-span-2 bg-gray-50 rounded-lg"></div>
@@ -151,14 +141,18 @@
               .scrollIntoView({ behavior: "smooth" });
             return false;
           });
+          let context, usual
         const toggles = ["mirror","f"];
         for (t in toggles) {
+
           t = toggles[t];
+          console.log(t);
+
           document
             .getElementById(t + "-extend")
             .addEventListener("click", (e) => {
-              let context = document.getElementById(t + "-context");
-              let usual = document.getElementById(t + "-usual");
+               context = document.getElementById(t + "-context");
+               usual = document.getElementById(t + "-usual");
               usual.classList.toggle("opacity-0");
               usual.classList.toggle("opacity-100");
               usual.classList.toggle("top-0");
