@@ -21,8 +21,8 @@ document
 
         context.classList.toggle("opacity-100");
         context.classList.toggle("opacity-0");
-        context.classList.toggle("top-56");
-        context.classList.toggle("top-0");
+        context.classList.toggle("mt-56");
+        context.classList.toggle("mt-10");
       });
   }
 let context, usual;
