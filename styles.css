@@ -33,9 +33,9 @@ cursor: auto;
     cursor: pointer;
   }
 }
-
+@media (max-width: 767px) {
 .h-col{height: 90vh;}
-
+}
 
   html,button {
   scroll-behavior: smooth;
