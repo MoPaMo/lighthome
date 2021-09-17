@@ -7,6 +7,22 @@ document
       .scrollIntoView({ behavior: "smooth" });
     return false;
   });
+  document
+  .querySelector(".icon-1")
+  .addEventListener("click", () => {
+    document
+      .querySelector("#mirror-usual")
+      .scrollIntoView({ behavior: "smooth" });
+    return false;
+  });  
+  document
+  .querySelector(".icon-2")
+  .addEventListener("click", () => {
+    document
+      .querySelector("#f-usual")
+      .scrollIntoView({ behavior: "smooth" });
+    return false;
+  });
   const setListener=(t)=>{
     document
       .getElementById(t + "-extend")
