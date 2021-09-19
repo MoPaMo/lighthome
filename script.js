@@ -23,6 +23,14 @@ document
       .scrollIntoView({ behavior: "smooth" });
     return false;
   });
+  document
+  .querySelector(".icon-3")
+  .addEventListener("click", () => {
+    document
+      .querySelector("#sl-usual")
+      .scrollIntoView({ behavior: "smooth" });
+    return false;
+  });
   const setListener=(t)=>{
     document
       .getElementById(t + "-extend")
