@@ -21,6 +21,14 @@
   animation-fill-mode: forwards;
   cursor: auto;
 }
+#header-home {
+  animation-name: header-button;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  opacity: 0%;
+  animation-fill-mode: forwards;
+  cursor: auto;
+}
 @keyframes header-button {
   from {
     opacity: 0%;
