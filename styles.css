@@ -35,7 +35,9 @@
   .h-col {
     height: 90vh;
   }
-
+  .h-half{
+    height:49vh;
+  }
   .icon {
     position: absolute;
     width: 20vw;
