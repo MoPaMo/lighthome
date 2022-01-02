@@ -32,7 +32,7 @@ const setListener = (t) => {
   });
 };
 let context, usual;
-const toggles = ["f"];
+const toggles = ["mirror","f"];
 for (t in toggles) {
   t = toggles[t];
   setListener(t);
