@@ -26,7 +26,7 @@ for (var i = 0; i < audioFiles.length; i++) {
   sound[n] = new Pizzicato.Sound(
     {
       source: "file",
-      options: { path: "./audio/" + n + ".mp3" },
+      options: { path: "/beneboard/audio/" + n + ".mp3" },
     },
     function () {
       console.log(`sound file ${n} loaded!`);
