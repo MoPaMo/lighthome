@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--dont get indexed-->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url(Inter-ExtraBold.ttf) format("truetype");
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url(Inter-Regular.ttf) format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      #jumbotron,#m {
+        color: #270e5a;
+        background-color: #8dd094;
+        font-family: Inter;
+        padding: 2.5rem;
+        border-radius: 0.5rem;
+      }
+      a,
+      button {
+        border: #270e5a solid 0.2rem;
+        padding: 1rem;
+        color: #270e5a;
+        background-color: #8dd094;
+        text-decoration: none;
+        transition: 150ms;
+        font-size: 1.2rem;
+      }
+      a:hover,
+      button:hover {
+        background-color: #270e5a;
+        color: #8dd094;
+      }
+      body {
+        background-color: #8dd094;
+      }
+      @media screen and (max-width: 600px) {
+        #btng{
+        /*align in center*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        
+      }
+          
+      
+      
+      
+      #btng > a {
+        margin: .5rem;
+      }
+      #m{
+          display:none;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div id="jumbotron">
+      <h4>Mir war langweilig…</h4>
+      <h1>Vertraust du mir?</h1>
+      <br />
+      <div id="btng">
+        <a href="">Ja</a>
+        <a href="https://mpm.is-a.dev/r" id="n">Nein</a>
+        <!--ja, das ist nicht wirklich weg aber hierfür reichts
+        hi übrigens-->
+      </div>
+    </div>
+    <div id="m">
+        <h4>Kein Vertrauen</h4>
+        <h1>Schade!</h1>
+        <h5>Es wäre echt cool gewesen…</h5>
+        <p>Deine Wahl wurde geloggt</p>
+    </div>
+    <script>
+        document.getElementById("n").addEventListener("click", function(e) {
+            localStorage.n=true;
+        });
+        if(localStorage.n=="true"){
+            document.getElementById("jumbotron").style.display="none";
+            document.getElementById("m").style.display="block";
+        }
+
+    </script>
+</html>
