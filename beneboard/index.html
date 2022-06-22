@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    
     <style>
             main > button.active {
               background-color: #ff7477;
@@ -150,13 +151,14 @@
     <div
       class="bg-coral p-2 mt-2 m-4 rounded-3xl flex flex-row text-center text-laser"
       id="bar"
+      onclick="alert('Moritz ist nicht rechtzeitig fertig geworden wuhu!')"
     >
-      <div class="aspect-square bg-grape p-2 m-1 rounded-3xl">
+      <div class="aspect-square bg-grape p-2 m-1 rounded-3xl" >
         <i class="fas fa-microphone"></i>
       </div>
-      <div class="grow bg-grape rounded-3xl">
+      <button class="grow bg-grape p-2 m-1 rounded-3xl" id="noise">
         <i class="fas fa-bullseye"></i>
-      </div>
+      </button>
       <!--<div class="grow ">
         <input type="checkbox" name="bull" id="checktest" class="" hidden/>
         <label
