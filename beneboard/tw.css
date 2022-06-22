@@ -679,17 +679,36 @@ video {
   text-align: center;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.font-black {
-  font-weight: 900;
+.font-thin {
+  font-weight: 100;
 }
 
 .text-grape {
@@ -704,6 +723,11 @@ video {
 
 .duration-150 {
   transition-duration: 150ms;
+}
+
+.checked\:bg-coral:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 116 119 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-coral:hover {
