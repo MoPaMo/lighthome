@@ -1,0 +1,140 @@
+@tailwind base;
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap");
+}
+html,
+body {
+  overflow: clip;
+  font-family: "JetBrains Mono", monospace, sans-serif;
+}
+#title-image {
+  position: absolute;
+
+  border: 1px solid black;
+  box-shadow: 10px 10px black;
+  /*  float: right;
+  clear: both;*/
+  width: 40vw;
+  top: 10vh;
+  right: calc(10px + 5vw);
+  z-index: 1;
+}
+/* 
+* margin order: top right bottom left 
+*/
+#title-text {
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid black;
+  box-shadow: 10px 10px black;
+  width: 85vw;
+  height: 52vh;
+  top: 20vh;
+  left: 5vw;
+  z-index: 0;
+}
+
+#title-hi {
+  position: relative;
+  font-family: "JetBrains Mono";
+  font-weight: bold;
+  font-size: 15vi;
+  left: 0.5i;
+}
+
+#title-foundme {
+  position: relative;
+  font-family: "JetBrains Mono";
+  font-weight: 300;
+  font-size: 3vb;
+  width: 80vi;
+  margin: 0px;
+  padding: 0px;
+  left: 4vi;
+}
+#title-name {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  border: 1px solid black;
+  border-right: 0px;
+  box-shadow: 10px 10px black;
+  width: 75vw;
+  height: 18vh;
+  top: 69vh;
+  right: 0vw;
+  z-index: 2;
+}
+#title-mopamo {
+  position: absolute;
+  font-family: "JetBrains Mono";
+  font-size: 6vi;
+  top: 3vh;
+  left: 2vi;
+}
+#title-phonetic {
+  position: relative;
+  height: 3vi;
+  left: 42vi;
+}
+#title-icons {
+  position: absolute;
+  /*center in the div*/
+  left: 10px;
+  bottom: 10px;
+}
+#title-icons svg {
+  fill: black;
+  height: 4vb;
+  display: inline;
+}
+
+/* non-mobile */
+@media (min-width: 600px) {
+  /**/
+  #title-text {
+    width: 40vw;
+    height: 50vh;
+    top: 20vh;
+    left: 8vw;
+  }
+  #title-hi {
+    font-size: 10vb;
+  }
+  #title-foundme {
+    font-size: 1.5vw;
+    width: 35vi;
+    left: 3vi;
+  }
+  #title-image {
+    width: 30vh;
+    top: 10vh;
+    right: 40vw;
+  }
+  #title-name {
+    width: 30vw;
+    height: 25vh;
+    top: 65vh;
+    right: 40vw;
+  }
+  #title-mopamo {
+    font-size: 4vb;
+    top: 3vh;
+    left: 2vi;
+  }
+  #title-phonetic {
+    left: 15vw;
+    height: 2vh;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px) {
+  #title-image {
+    width: auto;
+    height: 20vh;
+    top: 10vh;
+    right: 40vw;
+  }
+}
